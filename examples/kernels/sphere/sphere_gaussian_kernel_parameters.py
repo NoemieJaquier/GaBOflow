@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
         for i in range(nb_params):
             # Create kernel instance and set beta
-            k = SphereGaussianKernel(input_dim=dim, active_dims=range(dim), beta=betas[i])
+            k = SphereGaussianKernel(input_dim=dim, active_dims=range(dim), beta_min=0., beta=betas[i])
 
             # Compute the kernel
             Ktmp = k.compute_K_symm(data_man)

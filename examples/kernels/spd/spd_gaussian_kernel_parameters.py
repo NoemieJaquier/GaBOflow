@@ -105,7 +105,7 @@ if __name__ == "__main__":
 
         for i in range(nb_params):
             # Create kernel instance and set beta
-            k = SpdAffineInvariantGaussianKernel(input_dim=dim_vec, active_dims=range(dim_vec), beta=betas[i])
+            k = SpdAffineInvariantGaussianKernel(input_dim=dim_vec, active_dims=range(dim_vec), beta_min=0., beta=betas[i])
 
             # Compute the kernel
             Ktmp = k.compute_K_symm(data_man)
