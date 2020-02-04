@@ -160,6 +160,10 @@ if __name__ == "__main__":
     Bopt = bo_optimizer.optimize(test_function, n_iter=nb_iter_bo)
     print(Bopt)
 
+    # Evaluated points
+    x_eval = bo_optimizer.acquisition.data[0]
+    y_eval = bo_optimizer.acquisition.data[1]
+
     if display_figures:
         # Plot acquisition function
         fig = plt.figure(figsize=(10, 10))
@@ -205,8 +209,6 @@ if __name__ == "__main__":
         # Plot sphere
         plot_sphere(ax, alpha=0.4)
         # Plot evaluated points
-        x_eval = bo_optimizer.acquisition.data[0]
-        y_eval = bo_optimizer.acquisition.data[1]
         plt_scale_fact = test_function(true_min)[0, 0]  # optimal value
         for n in range(x_eval.shape[0]):
             ax.scatter(x_eval[n, 0], x_eval[n, 1], x_eval[n, 2],
