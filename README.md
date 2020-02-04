@@ -5,7 +5,7 @@ This repository contains the source code to perform Geometry-aware Bayesian Opti
 # Requirements
 This code was tested with Python 3.5 and 3.6. It requires the following packages:
 - Numpy
-- Scipy (version <=1.2.1, to be compatible with pymanopt)
+- Scipy
 - Matplotlib
 - Tensorflow
 - GPflow 0.5
@@ -16,7 +16,7 @@ This code was tested with Python 3.5 and 3.6. It requires the following packages
 # Installation 
 To install GaBOflow, first clone the repository and install the related packages, as explained below.
 ```
-pip install numpy scipy==1.2.1 matplotlib pymanopt
+pip install numpy scipy matplotlib pymanopt
 ```
 
 To install GPflowOpt and its dependencies (e.g. tensorflow and gpflow) follow the instructions given in [GPflowOpt repository](https://github.com/GPflow/GPflowOpt).
