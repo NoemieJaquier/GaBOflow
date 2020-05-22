@@ -5,7 +5,7 @@ This repository contains the source code to perform Geometry-aware Bayesian Opti
 ### Important note: 
 GaBOflow depends on GPflow and GPflowOpt. However, GPflowOpt has not been updated since a while and is not compatible with the latest version of GPflow.
 Therefore, we created [GaBOtorch](https://github.com/NoemieJaquier/GaBOtorch), which is based on PyTorch and contains the source code of GaBO. 
-New examples and updates will be carried out in [GaBOtorch](https://github.com/NoemieJaquier/GaBOtorch).
+New examples and updates will be available in [GaBOtorch](https://github.com/NoemieJaquier/GaBOtorch).
 
 # Requirements
 This code was tested with Python 3.5 and 3.6. It requires the following packages:
