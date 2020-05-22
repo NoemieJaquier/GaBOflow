@@ -2,6 +2,11 @@
 
 This repository contains the source code to perform Geometry-aware Bayesian Optimization (GaBO) on Riemannian manifolds.
 
+### Important note: 
+GaBOflow depends on GPflow and GPflowOpt. However, GPflowOpt has not been updated since a while and is not compatible with the latest version of GPflow.
+Therefore, we created [GaBOtorch](https://github.com/NoemieJaquier/GaBOtorch), which is based on PyTorch and contains the source code of GaBO. 
+New examples and updates will be carried out in [GaBOtorch](https://github.com/NoemieJaquier/GaBOtorch).
+
 # Requirements
 This code was tested with Python 3.5 and 3.6. It requires the following packages:
 - Numpy
@@ -59,16 +64,18 @@ The following examples are available in GaBOflow:
 | bo_spd_ackley_chol      | This example shows the use of Cholesky Bayesian optimization on the SPD manifold S2_++ to optimize the Ackley function. An Euclidean BO is applied on the Cholesky decomposition of the SPD matrices.  | 
 | bo_spd_ackley_eucl      | This example shows the use of Euclidean Bayesian optimization on the SPD manifold S2_++ to optimize the Ackley function. |
 
-# Citing GaBO
-If you found GaBOflow useful, please cite the following [paper](http://njaquier.ch/files/CoRL19_Jaquier_GaBO.pdf):
+# References
+If you found GaBOtorch useful, we would be grateful if you cite the following [reference](http://njaquier.ch/files/CoRL19_Jaquier_GaBO.pdf):
 ```
+[1] N. Jaquier, L. Rozo, S. Calinon and M. Bürger (2019). Bayesian Optimization meets Riemannian Manifolds in Robot Learning. In Conference on Robot Learning (CoRL).
 @inproceedings{Jaquier19GaBO,
 	author="Jaquier, N and Rozo, L. and Calinon, S. and B\"urger, M.", 
 	title="Bayesian Optimization meets Riemannian Manifolds in Robot Learning",
-	booktitle="In Proc of the Conference on Robot Learning ({CoRL})",
+	booktitle="In Conference on Robot Learning (CoRL)",
 	year="2019",
 	month="October",
 	address="Osaka, Japan",
 	pages=""
 }
+```
 ```
